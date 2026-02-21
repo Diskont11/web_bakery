@@ -1,7 +1,20 @@
-ul {
+:root {
+    --color-primary-write: #FAF4EA;
+    --color-primary-dark: #31261A;
+    --color-primary-green: #819B57;
+    --color-secondary-white: #CFCFBC;
+    --color-secondary-orange: #A18268;
+    --color-secondary-green: #465929;
+
+}
+.body {
+    color: var(--color-primary-dark);
+}
+
+.ul {
 list-style-type: none;
 }
-button {
+.button {
 color: #FAF4EA;
 background-color: #819B57 ;
 border: none;
@@ -9,14 +22,23 @@ border-radius: 8px;
 cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     color: #31261A;
     background-color: transparent;
     border: 2px solid #819B57;
 }
 
-button:active {
+.button:active:active {
     color: #31261A;
     background-color: transparent;
     border: 2px solid #819B57;
+}
+.nav-list a {
+    color: var(--color-primary-write);
+}
+.nav-list a :hover {
+    color: var(--color-primary-green);
+}
+.hero-title {
+    color: var(--color-primary-green);
 }
